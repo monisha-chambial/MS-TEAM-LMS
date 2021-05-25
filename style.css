@@ -5,6 +5,7 @@ body
     font-family:sans-serif;
     background-image: url("back.jpg");
     background-size: cover;
+    overflow-y: hidden;
 }
 .container
 {

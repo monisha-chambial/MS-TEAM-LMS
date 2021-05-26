@@ -3,9 +3,17 @@
         <title> MS TEAM GUIDE </title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.es.min.js" integrity="sha512-37O1KSmPgEkU0xeW9sHZ8jLK9ZZxaMqwJPk36yPIMiB62RrlipD3BXijLd1Dol3NL7FIb0KHsFp+9LDbcbc9nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var h1= document.getElementById('heading')
+        var doc=new jsPDF()
+        doc.fromHTML(h1,15,15)
+        doc.save("login.pdf")
+    </script>
     </head>
     <body>
         <h2> MS-TEAM </h2>
+        <h1 id="heading"> Download </h1> 
         <div class="container">
           
                 <embed src="STEPS TO LOGIN MS-TEAM.pdf" width="100%" , height="600px" />            
